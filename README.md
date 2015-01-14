@@ -6,5 +6,3 @@ This is my first git application.
 Git rebase - testing
 
 Got fix committing
-
-Hotfix
