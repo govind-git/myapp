@@ -4,25 +4,25 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
 		.state('index',
 			{
 				url: "/index",
-				//controller: 'mainController',
+				controller: 'MainController',
 				templateUrl: 'Partials/main.html'
 			})
-		.state('index.login',
+		.state('login',
 			{
 				url: "/login",
-				//controller: 'loginController',
+				controller: 'LoginController',
 				templateUrl: 'Partials/login.html'
 			})
-		.state('index.register',
+		.state('register',
 			{
-				url: "/login",
-				//controller: 'loginController',
+				url: "/register",
+				controller: 'RegisterController',
 				templateUrl: 'Partials/register.html'
 			})
 		.state('list',
 			{
 				url: "/list",
-				controller: 'listController',
+				controller: 'ListController',
 				templateUrl: 'Partials/list.html'
 			})
 		$urlRouterProvider.otherwise('/index')
